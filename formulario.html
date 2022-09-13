@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <!--Texto de Inicio do formulário-->
+                <legend><strong>Formulário de Clientes</strong></legend><br>
+
+                <!--Espaço para colocar Nome, email e telefone-->
+                <div class="inputbox">
+                    <input type="text" name="nome" id="nome" class="inputuser" required>
+                    <label for="nome" class="labelanimation">Nome Completo</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="email" id="email" class="inputuser" required>
+                    <label for="nome" class="labelanimation">Email</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="tel" name="telefone" id="telefone" class="inputuser" required>
+                    <label for="nome" class="labelanimation">Telefone</label>
+                </div>
+                <br>
+
+                <!--espaço para colocar sexo masculino ou feminino-->
+                <p><strong>Sexo</strong></p>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="feminino">Masculino</label>
+                <br>
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                <label for="feminino">Outro</label>
+                <br><br>
+
+                <!--espaço para colocar data-->
+                
+                    <label for="data_nascimento" id="data"><strong>Data de Nascimento:</strong></label>
+                    <input type="date" name="data_nascimento" id="data_nascimento" required>
+                
+                <br><br>
+
+                <!--Espaço para colocar Cidade, estado e endereço-->
+                <div class="inputbox">
+                    <input type="text" name="cidade" id="cidade" class="inputuser" required>
+                    <label for="cidade" class="labelanimation">Cidade</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="estado" id="estado" class="inputuser" required>
+                    <label for="estado" class="labelanimation">Estado</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="endereco" id="endereco" class="inputuser" required>
+                    <label for="endereco" class="labelanimation">Endereço</label>
+                </div>
+                <br><br>
+
+                <!--Botão de Enviar-->
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
